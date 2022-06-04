@@ -1,0 +1,21 @@
+x = int(input("Ingrese el valor de un punto: "))
+y = int(input("Ingrese la cantidad de puntos para Derechos Administrativos: "))
+z = int(input("Ingrese la cantidad de puntos para Bienestar universitario: "))
+a = int(input("Ingrese la cantidad de puntos para Derechos académicos: "))
+p = int(input("Ingrese el valor actual de la póliza: "))
+
+Da = x*y
+Bn = x*z
+Dac = x*a
+
+total = Da + Bn + Dac +p
+total = format(total, ' ,d')
+
+
+
+print("\n")
+print("Los derechos académicos tienen un valor de", "{:,}".format(Da))
+print("El precio de bienestar es de", "{:,}".format(Bn))
+print("Los derechos académicos tienen un valor de", "{:,}".format(Dac))
+print("\n")
+print("El costo total del posgrado es de", total)
